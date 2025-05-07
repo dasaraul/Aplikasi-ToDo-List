@@ -7,8 +7,8 @@
 [![Flutter](https://img.shields.io/badge/Flutter-3.16.0-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev)
 [![Dart](https://img.shields.io/badge/Dart-3.0.0-0175C2?style=for-the-badge&logo=dart&logoColor=white)](https://dart.dev)
 [![License](https://img.shields.io/badge/License-MIT-success?style=for-the-badge)](LICENSE)
-[![PRs](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)](https://github.com/tuti-hastuti/todo-list-app-flutter/pulls)
-[![GitHub stars](https://img.shields.io/github/stars/tuti-hastuti/todo-list-app-flutter?style=for-the-badge)](https://github.com/tuti-hastuti/todo-list-app-flutter/stargazers)
+[![PRs](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)](https://github.com/dasaraul/Aplikasi-ToDo-List/pulls)
+[![GitHub stars](https://img.shields.io/github/stars/dasaraul/Aplikasi-ToDo-List?style=for-the-badge)](https://github.com/dasaraul/Aplikasi-ToDo-List/stargazers)
 
 **Aplikasi manajemen tugas yang elegan dengan animasi dinamis dan desain minimalis**
 
@@ -81,18 +81,16 @@
 ## 📱 Screenshots
 
 <div align="center">
-<img src="screenshots/loading_screen.png" width="200" alt="Loading Screen"/>
-<img src="screenshots/home_screen.png" width="200" alt="Home Screen"/>
-<img src="screenshots/add_task.png" width="200" alt="Add Task"/>
-<img src="screenshots/dark_mode.png" width="200" alt="Dark Mode"/>
+<img src="screenshots/loading_screen.jpg" width="200" alt="Loading Screen"/>
+<img src="screenshots/home_screen.jpg" width="200" alt="Home Screen"/>
+<img src="screenshots/about.jpg" width="200" alt="About"/>
 </div>
 
-## 🎬 Demo
+## Unduh Aplikasi
 
-<div align="center">
-  <p>Pindai QR code berikut untuk mengunduh dan mencoba aplikasi:</p>
-  <img src="screenshots/qr_code.png" width="200" alt="QR Code">
-</div>
+Anda dapat mengunduh versi terbaru aplikasi TaskFlow dari [halaman Releases](https://github.com/dasaraul/Aplikasi-ToDo-List/releases).
+
+- [Download APK Terbaru](https://github.com/dasaraul/Aplikasi-ToDo-List/releases/latest)
 
 ## 🔧 Instalasi
 
@@ -110,12 +108,12 @@
 
 1. Clone repository
    ```bash
-   git clone https://github.com/tuti-hastuti/todo-list-app-flutter.git
+   git clone https://github.com/dasaraul/Aplikasi-ToDo-List
    ```
 
 2. Masuk ke direktori proyek
    ```bash
-   cd todo-list-app-flutter
+   cd Aplikasi-ToDo-List
    ```
 
 3. Install dependencies
@@ -334,8 +332,8 @@ class StorageService {
 ## 👥 Contributor
 
 <div align="center">
-  <a href="https://github.com/tuti-hastuti">
-    <img src="https://avatars.githubusercontent.com/u/1234567?v=4" width="100px" alt="Tuti Hastuti"/>
+  <a href="https://github.com/dasaraul">
+    <img src="https://avatars.githubusercontent.com/u/dasaraul?v=4" width="100px" alt="Tuti Hastuti"/>
     <br />
     <sub><b>Tuti Hastuti</b></sub>
   </a>
@@ -349,6 +347,32 @@ Proyek ini dilisensikan di bawah [Lisensi MIT](LICENSE).
 
 </div>
 
+### MIT License
+
+```
+MIT License
+
+Copyright (c) 2025 Tuti Hastuti
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
 ---
 
 <div align="center">
@@ -357,6 +381,6 @@ Proyek ini dilisensikan di bawah [Lisensi MIT](LICENSE).
 
 <p>© 2025 Tuti Hastuti. All rights reserved.</p>
 
-<img src="https://visitor-badge.laobi.icu/badge?page_id=tuti-hastuti.todo-list-app-flutter&left_color=blueviolet&right_color=purple" alt="visitors">
+<img src="https://visitor-badge.laobi.icu/badge?page_id=dasaraul.Aplikasi-ToDo-List&left_color=blueviolet&right_color=purple" alt="visitors">
 
 </div>
