@@ -1,59 +1,362 @@
-# Todo App Flutter
+<div align="center">
 
-Aplikasi To-Do List sederhana yang dibuat dengan Flutter.
+# ✨ To-Do List App Flutter ✨
 
-## Fitur
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/flutter/flutter-original.svg" alt="flutter" width="100" height="100"/>
 
-- Loading screen dengan animasi Lottie
-- Menambahkan tugas baru
-- Menandai tugas sebagai selesai
-- Menghapus tugas
-- Penyimpanan data lokal menggunakan SharedPreferences
+[![Flutter](https://img.shields.io/badge/Flutter-3.16.0-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev)
+[![Dart](https://img.shields.io/badge/Dart-3.0.0-0175C2?style=for-the-badge&logo=dart&logoColor=white)](https://dart.dev)
+[![License](https://img.shields.io/badge/License-MIT-success?style=for-the-badge)](LICENSE)
+[![PRs](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)](https://github.com/tuti-hastuti/todo-list-app-flutter/pulls)
+[![GitHub stars](https://img.shields.io/github/stars/tuti-hastuti/todo-list-app-flutter?style=for-the-badge)](https://github.com/tuti-hastuti/todo-list-app-flutter/stargazers)
 
-## Cara Menjalankan Aplikasi
+**Aplikasi manajemen tugas yang elegan dengan animasi dinamis dan desain minimalis**
 
-1. Pastikan Flutter SDK telah terinstal di komputer Anda
-2. Clone repository ini
-3. Jalankan perintah `flutter pub get` untuk menginstal dependencies
-4. Jalankan aplikasi dengan perintah `flutter run`
+[Fitur](#fitur) • 
+[Screenshots](#screenshots) • 
+[Demo](#demo) • 
+[Instalasi](#instalasi) • 
+[Struktur](#struktur) • 
+[Teknologi](#teknologi) • 
+[Contributor](#contributor)
 
-## Struktur Proyek
+</div>
+
+<br/>
+
+<div align="center">
+
+<img src="screenshots/app_demo.gif" alt="App Demo" width="300">
+
+*Animasi Aplikasi To-Do List*
+
+</div>
+
+<br/>
+
+## 🚀 Fitur
+
+<table>
+  <tr>
+    <td width="50%">
+      <h3>🎨 UI Elegan</h3>
+      <ul>
+        <li>Desain minimalis dengan tema ungu-lavender</li>
+        <li>Mode terang dan gelap otomatis</li>
+        <li>Animasi transisi halus</li>
+        <li>Loading screen dengan animasi Lottie</li>
+      </ul>
+    </td>
+    <td width="50%">
+      <h3>⚡ Core Functionality</h3>
+      <ul>
+        <li>Tambah, hapus, dan perbarui tugas</li>
+        <li>Tandai tugas sebagai selesai dengan checkbox</li>
+        <li>Swipe untuk menghapus tugas</li>
+        <li>Penyimpanan lokal persisten</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <h3>🔍 Detail Tugas</h3>
+      <ul>
+        <li>Tampilkan tanggal/waktu pembuatan tugas</li>
+        <li>Tampilkan tanggal/waktu penyelesaian tugas</li>
+        <li>Status visual yang jelas untuk tugas selesai/belum</li>
+      </ul>
+    </td>
+    <td width="50%">
+      <h3>🛠️ Technical Features</h3>
+      <ul>
+        <li>Penyimpanan data dengan SharedPreferences</li>
+        <li>Arsitektur terstruktur dan terorganisir</li>
+        <li>Performa responsif di berbagai ukuran layar</li>
+        <li>Desain adaptif untuk berbagai perangkat</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+## 📱 Screenshots
+
+<div align="center">
+<img src="screenshots/loading_screen.png" width="200" alt="Loading Screen"/>
+<img src="screenshots/home_screen.png" width="200" alt="Home Screen"/>
+<img src="screenshots/add_task.png" width="200" alt="Add Task"/>
+<img src="screenshots/dark_mode.png" width="200" alt="Dark Mode"/>
+</div>
+
+## 🎬 Demo
+
+<div align="center">
+  <p>Pindai QR code berikut untuk mengunduh dan mencoba aplikasi:</p>
+  <img src="screenshots/qr_code.png" width="200" alt="QR Code">
+</div>
+
+## 🔧 Instalasi
+
+<details>
+<summary>Klik untuk melihat langkah-langkah instalasi</summary>
+
+### Prasyarat
+
+- [Flutter SDK](https://flutter.dev/docs/get-started/install) (versi 3.16.0 atau lebih tinggi)
+- [Dart SDK](https://dart.dev/get-dart) (versi 3.0.0 atau lebih tinggi)
+- Android Studio / VS Code dengan plugin Flutter
+- Perangkat Android / iOS atau emulator
+
+### Langkah-langkah
+
+1. Clone repository
+   ```bash
+   git clone https://github.com/tuti-hastuti/todo-list-app-flutter.git
+   ```
+
+2. Masuk ke direktori proyek
+   ```bash
+   cd todo-list-app-flutter
+   ```
+
+3. Install dependencies
+   ```bash
+   flutter pub get
+   ```
+
+4. Jalankan aplikasi
+   ```bash
+   flutter run
+   ```
+
+</details>
+
+## 📂 Struktur Proyek
 
 ```
-todo_app_flutter/
-├── lib/
-│   ├── main.dart                 # Entry point aplikasi
-│   ├── models/
-│   │   └── todo_model.dart       # Model data untuk Todo
-│   ├── screens/
-│   │   ├── loading_screen.dart   # Halaman loading dengan animasi
-│   │   └── home_screen.dart      # Halaman utama aplikasi
-│   └── services/
-│       └── storage_service.dart  # Service untuk penyimpanan data
-└── pubspec.yaml                  # Konfigurasi proyek
+lib/
+├── main.dart                 # Entry point & theme configuration
+├── models/
+│   └── todo_model.dart       # Data model for Todo Item
+├── screens/
+│   ├── loading_screen.dart   # Loading screen with Lottie animation
+│   └── home_screen.dart      # Main screen with todo list
+└── services/
+    └── storage_service.dart  # Local storage service
 ```
 
-## Dependencies
+## 🧩 Teknologi
 
-- `flutter_dotlottie`: Untuk menampilkan animasi Lottie
-- `shared_preferences`: Untuk menyimpan data secara lokal
-- `uuid`: Untuk menghasilkan ID unik
+<div align="center">
 
-## Pengembangan Selanjutnya
+[![Made with Flutter](https://img.shields.io/badge/Made%20with-Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev)
+[![Uses Lottie](https://img.shields.io/badge/Uses-Lottie-FF5A5F?style=for-the-badge&logo=airbnb&logoColor=white)](https://airbnb.design/lottie/)
+[![Storage](https://img.shields.io/badge/Storage-SharedPreferences-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://pub.dev/packages/shared_preferences)
+[![Design](https://img.shields.io/badge/Design-Material%20You-4CAF50?style=for-the-badge&logo=material-design&logoColor=white)](https://m3.material.io/)
 
-Beberapa fitur yang dapat ditambahkan untuk pengembangan aplikasi di masa depan:
+</div>
 
-1. Kategori tugas
-2. Pengaturan prioritas tugas
-3. Notifikasi pengingat
-4. Fitur pencarian
-5. Tema aplikasi yang dapat disesuaikan
-6. Sinkronisasi data dengan cloud
+## 📊 Alur Kerja Aplikasi
 
-## Screenshot
+```mermaid
+graph TD
+    A[App Launch] --> B[Loading Screen]
+    B -->|3 seconds animation| C[Home Screen]
+    C -->|Load Data| D[SharedPreferences]
+    C -->|Add Task| E[Create New Task]
+    E --> F[Save to Storage]
+    C -->|Toggle Task| G[Update Task Status]
+    G --> F
+    C -->|Delete Task| H[Remove Task]
+    H --> F
+    F --> I[Refresh UI]
+    I --> C
+```
 
-[Tambahkan screenshot aplikasi di sini]
+## 💻 Penjelasan Kode
 
-## Kontak
+<details>
+<summary><b>1. Main.dart - Konfigurasi Tema & Entry Point</b></summary>
 
-[Tambahkan informasi kontak di sini]
+```dart
+void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      // Theme configuration with lavender-purple color scheme
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: const Color(0xFF6A5ACD), // Slate Blue
+          brightness: Brightness.light,
+          // More theme configurations...
+        ),
+        // Other theme properties...
+      ),
+      darkTheme: ThemeData(/* Dark theme configuration */),
+      themeMode: ThemeMode.system,
+      home: const LoadingScreen(),
+    );
+  }
+}
+```
+</details>
+
+<details>
+<summary><b>2. TodoItem Class - Model Data</b></summary>
+
+```dart
+class TodoItem {
+  String id;
+  String judul;
+  bool selesai;
+  DateTime? tanggalDibuat;
+  DateTime? tanggalSelesai;
+
+  TodoItem({
+    required this.id,
+    required this.judul,
+    this.selesai = false,
+    DateTime? tanggalDibuat,
+    this.tanggalSelesai,
+  }) : this.tanggalDibuat = tanggalDibuat ?? DateTime.now();
+
+  // JSON conversion methods
+  factory TodoItem.fromJson(Map<String, dynamic> json) { /* ... */ }
+  Map<String, dynamic> toJson() { /* ... */ }
+  
+  // Create copy with changes
+  TodoItem copyWith({ /* ... */ }) { /* ... */ }
+}
+```
+</details>
+
+<details>
+<summary><b>3. Loading Screen - Animasi Lottie</b></summary>
+
+```dart
+class _LoadingScreenState extends State<LoadingScreen> {
+  bool _isLoading = true;
+
+  @override
+  void initState() {
+    super.initState();
+    
+    // Timer for loading simulation
+    Timer(const Duration(seconds: 3), () {
+      if (mounted) {
+        setState(() { _isLoading = false; });
+        Navigator.of(context).pushReplacement(
+          MaterialPageRoute(builder: (context) => const HomeScreen()),
+        );
+      }
+    });
+  }
+
+  // Build method with Lottie animation
+  @override
+  Widget build(BuildContext context) {
+    // Display Lottie animation and loading text
+    // ...
+  }
+}
+```
+</details>
+
+<details>
+<summary><b>4. Home Screen - CRUD Operations</b></summary>
+
+```dart
+class _HomeScreenState extends State<HomeScreen> {
+  // Properties and controllers
+  final TextEditingController _todoController = TextEditingController();
+  List<TodoItem> _todoItems = [];
+  final StorageService _storageService = StorageService();
+  final Uuid _uuid = const Uuid();
+  bool _isLoading = true;
+
+  // Load todos from storage
+  Future<void> _loadTodos() async { /* ... */ }
+
+  // Add new todo
+  Future<void> _addTodo() async { /* ... */ }
+
+  // Toggle todo completion status
+  Future<void> _toggleTodoStatus(String id) async { /* ... */ }
+
+  // Delete todo
+  Future<void> _deleteTodo(String id) async { /* ... */ }
+
+  // UI building methods
+  // ...
+}
+```
+</details>
+
+<details>
+<summary><b>5. Storage Service - Data Persistence</b></summary>
+
+```dart
+class StorageService {
+  static const String _todosKey = 'todos_data';
+
+  // Save todos to SharedPreferences
+  Future<void> saveTodos(List<TodoItem> todos) async { /* ... */ }
+
+  // Load todos from SharedPreferences
+  Future<List<TodoItem>> loadTodos() async { /* ... */ }
+
+  // Clear all todo data
+  Future<void> clearTodos() async { /* ... */ }
+}
+```
+</details>
+
+## 🔮 Pengembangan Selanjutnya
+
+<div align="center">
+
+| Fitur | Deskripsi | Status |
+|-------|-----------|--------|
+| 🗂️ Kategori Tugas | Pengelompokan tugas berdasarkan kategori | Planned |
+| 🔔 Notifikasi | Pengingat untuk tugas dengan deadline | Planned |
+| ☁️ Cloud Sync | Sinkronisasi data dengan Firebase | Future |
+| 🔍 Pencarian | Fitur pencarian dan filter tugas | Future |
+| 📅 Kalender View | Tampilan kalender untuk tugas | Future |
+
+</div>
+
+## 👥 Contributor
+
+<div align="center">
+  <a href="https://github.com/tuti-hastuti">
+    <img src="https://avatars.githubusercontent.com/u/1234567?v=4" width="100px" alt="Tuti Hastuti"/>
+    <br />
+    <sub><b>Tuti Hastuti</b></sub>
+  </a>
+</div>
+
+## 📄 Lisensi
+
+<div align="center">
+
+Proyek ini dilisensikan di bawah [Lisensi MIT](LICENSE).
+
+</div>
+
+---
+
+<div align="center">
+
+**✨ Made with 💜 and Flutter ✨**
+
+<p>© 2025 Tuti Hastuti. All rights reserved.</p>
+
+<img src="https://visitor-badge.laobi.icu/badge?page_id=tuti-hastuti.todo-list-app-flutter&left_color=blueviolet&right_color=purple" alt="visitors">
+
+</div>
